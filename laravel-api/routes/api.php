@@ -3,7 +3,7 @@
 Use App\Article;
 
 
-Route::post('registrou','UsuarioController@registroUser');//edgar
-Route::put('login', 'UsuarioController@login');//edwin
-Route::get('mecanico/{personal_mecanico}', 'Personal_MecanicoController@buscarId');//cindy
+Route::post('registrou','UsuarioController@registroUser');
+Route::put('login', 'UsuarioController@login');
+Route::get('mecanico/{personal_mecanico}', 'Personal_MecanicoController@buscarId');
 

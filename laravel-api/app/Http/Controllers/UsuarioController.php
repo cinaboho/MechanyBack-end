@@ -17,17 +17,18 @@ class UsuarioController extends Controller
     {
         
         $user = Usuario::where('id', request('id'))->first();
-        if ($user != null  ) {
+        
+        if ($user != null) {
             if($user->password==$request->password){
-                echo 'login correcto';
+               echo 'login correcto';
+            }else{
+            echo 'Error en las credenciales';
             }
-            
         }
         else{
-            echo 'Error en las credenciales';
-                
+            echo 'Error en las credenciales';     
             }
-            
+              
             
             
         
